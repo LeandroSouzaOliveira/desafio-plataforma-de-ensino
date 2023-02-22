@@ -2,6 +2,8 @@ package entities;
 
 public class Task extends Lesson {
 	
+	public static final Integer TIME_QUESTION = 5;
+	
 	private String description;
 	private Integer questionCount;
 	
@@ -33,6 +35,6 @@ public class Task extends Lesson {
 
 	@Override
 	public Integer duration() {
-		return questionCount * 60;
+		return questionCount * TIME_QUESTION * 60;
 	}
 }
